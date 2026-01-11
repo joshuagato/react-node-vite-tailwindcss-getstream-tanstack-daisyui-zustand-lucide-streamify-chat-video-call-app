@@ -15,7 +15,7 @@ const PORT = process.env.PORT;
 
 const __dirname = path.resolve();
 
-app.use(cors());
+// app.use(cors());
 
 app.use(
     cors({
