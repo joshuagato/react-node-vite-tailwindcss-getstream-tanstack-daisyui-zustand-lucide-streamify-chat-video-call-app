@@ -17,7 +17,8 @@ const __dirname = path.resolve();
 
 app.use(
     cors({
-        origin: process.env.CORS_ORIGIN,
+        // origin: process.env.CORS_ORIGIN,
+        origin: true, // Dynamically allow the requesting origin
         credentials: true, // allow frontend to send cookies
     })
 );
