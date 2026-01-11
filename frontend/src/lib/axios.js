@@ -5,9 +5,9 @@ import axios from "axios";
 //         ? import.meta.env.VITE_API_URL
 //         : "/api";
 
-const BASE_URL = import.meta.env.VITE_API_URL;
+const baseURL = import.meta.env.VITE_API_URL;
 
 export const axiosInstance = axios.create({
-    baseURL: BASE_URL,
+    baseURL,
     withCredentials: true, // send cookies with the request
 });
